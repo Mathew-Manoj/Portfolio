@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mathew Manoj | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Mathew Manoj Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <img src="your-image.jpg" alt="Mathew Manoj">
-    <h1>Mathew Manoj</h1>
-    <p>Aspiring Cybersecurity Engineer | UI/UX Enthusiast | Digital Forensics Learner</p>
+    <nav class="navbar">
+      <h1>Mathew Manoj</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>🛠️ Tech Experience</h2>
-    <p>
-      Experienced in <strong>Python, C, Shell Scripting, JavaScript, CSS</strong><br>
-      Skilled with <strong>Figma</strong> for UI/UX design and prototyping.
-    </p>
-  </section>
+  <main>
+    <section class="hero fade-in">
+      <img src="profile.png" alt="Profile Picture" class="hero-img">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Mathew Manoj</span></h2>
+        <p>Aspiring Cybersecurity Engineer | Digital Forensics & UI/UX Enthusiast</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>📚 Currently Learning</h2>
-    <p>
-      B.Tech in Cyber Security Engineering.<br>
-      Currently pursuing degree at <strong>Amal Jyothi College of Engineering, Koovappally</strong> 
-      (<a href="https://www.ajce.in" target="_blank">ajce.in</a>).<br>
-      Exploring system security, digital forensics, and secure scripting techniques.
-    </p>
-  </section>
+    <section id="about" class="card fade-in">
+      <h3>About Me</h3>
+      <p>I am an aspiring cybersecurity engineer passionate about digital forensics, emerging technologies, and intuitive user interface design. I enjoy working with Figma to create clean, responsive designs.</p>
+    </section>
 
-  <section>
-    <h2>🌐 Live Website</h2>
-    <p>
-      Visit my portfolio: <a href="https://mathewmanoj.github.io/Portfolio" target="_blank">mathewmanoj.github.io/Portfolio</a>
-    </p>
-  </section>
+    <section id="skills" class="card fade-in">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python, C, Shell Scripting</li>
+        <li>JavaScript, CSS, HTML</li>
+        <li>UI/UX Design with Figma</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>📬 Contact</h2>
-    <p>
-      📧 Email: <a href="mailto:mathewmanoj09@gmail.com">mathewmanoj09@gmail.com</a><br>
-      💼 LinkedIn: <a href="https://www.linkedin.com/in/mathew-manoj-78b047327" target="_blank">linkedin.com/in/mathew-manoj</a><br>
-      🖥️ GitHub: <a href="https://github.com/Mathew-Manoj" target="_blank">github.com/Mathew-Manoj</a>
-    </p>
-  </section>
+    <section id="education" class="card fade-in">
+      <h3>Education</h3>
+      <p>Currently pursuing a degree in Cybersecurity at <a href="https://www.ajce.in" target="_blank">Amal Jyothi College of Engineering, Koovappally</a>.</p>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="contact" class="card fade-in">
+      <h3>Contact Me</h3>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" name="email" placeholder="Enter Your Gmail Address" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="hover-button">Send</button>
+      </form>
+      <div class="contact-links">
+        <p>Email: <a href="mailto:mathewmanoj09@gmail.com">mathewmanoj09@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Mathew-Manoj" target="_blank">Mathew-Manoj</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mathew-manoj-78b047327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">View Profile</a></p>
+        <p>Live Website: <a href="https://coffee-friederike-44.tiiny.site" target="_blank">View Site</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mathew Manoj Portfolio. All rights reserved.</p>
+  </footer>
+
 </body>
-</html>
-</body>
-</html>
-
 </html>
