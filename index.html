@@ -3,32 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Mathew Manoj Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #111;
-      color: white;
-    }
-    .hero {
-      text-align: center;
-      padding: 50px;
-    }
-    .hero img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    .hero h2 span {
-      color: #00b894;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero">
-    <img src="https://ui-avatars.com/api/?name=Mathew+Manoj&background=00b894&color=fff&size=200" alt="Avatar">
-    <h2>Welcome! I'm <span>Mathew Manoj</span></h2>
-    <p>Aspiring Cybersecurity Engineer | UI/UX Enthusiast</p>
-  </section>
+
+  <header>
+    <nav class="navbar">
+      <h1>Mathew Manoj</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <img src="profile.png" alt="Profile Picture" class="hero-img">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Mathew Manoj</span></h2>
+        <p>Aspiring Cybersecurity Engineer | Digital Forensics & UI/UX Enthusiast</p>
+      </div>
+    </section>
+
+    <section id="about" class="card fade-in">
+      <h3>About Me</h3>
+      <p>I am an aspiring cybersecurity engineer passionate about digital forensics, emerging technologies, and intuitive user interface design. I enjoy working with Figma to create clean, responsive designs.</p>
+    </section>
+
+    <section id="skills" class="card fade-in">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python, C, Shell Scripting</li>
+        <li>JavaScript, CSS, HTML</li>
+        <li>UI/UX Design with Figma</li>
+      </ul>
+    </section>
+
+    <section id="education" class="card fade-in">
+      <h3>Education</h3>
+      <p>Currently pursuing a degree in Cybersecurity at <a href="https://www.ajce.in" target="_blank">Amal Jyothi College of Engineering, Koovappally</a>.</p>
+    </section>
+
+    <section id="contact" class="card fade-in">
+      <h3>Contact Me</h3>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" name="email" placeholder="Enter Your Gmail Address" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="hover-button">Send</button>
+      </form>
+      <div class="contact-links">
+        <p>Email: <a href="mailto:mathewmanoj09@gmail.com">mathewmanoj09@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Mathew-Manoj" target="_blank">Mathew-Manoj</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mathew-manoj-78b047327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">View Profile</a></p>
+        <p>Live Website: <a href="https://coffee-friederike-44.tiiny.site" target="_blank">View Site</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mathew Manoj Portfolio. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
 
