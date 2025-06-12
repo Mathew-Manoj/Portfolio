@@ -1,9 +1,16 @@
-// Scroll-triggered fade-in effect
-window.addEventListener("scroll", () => {
-  document.querySelectorAll(".fade-in").forEach((el) => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.classList.add("visible");
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Animate once
+      }
+    });
+  }, {
+    threshold: 0.2
   });
+
+  elements.forEach(el => observer.observe(el));
 });
