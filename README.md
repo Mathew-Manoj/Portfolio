@@ -1,4 +1,4 @@
-# 🎓 Mathew Manoj - Cybersecurity Engineering Student Portfolio
+# 🎓 Mathew Manoj - Website Portfolio
 
 Welcome to my personal portfolio website! I'm **Mathew Manoj**, a B.Tech Cybersecurity Engineering student with a deep interest in ethical hacking, secure coding, and all things tech. I love blending creative front-end design with functional and secure code.
 
